@@ -29,15 +29,18 @@ body {
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
+    background-image: url(../assets/cave.jpeg);
+    background-size: cover;
+    text-align: center;
 }
 
-main {
+/* main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
-}
+} */
 
 section {
     background-color: var(--color5);
@@ -51,6 +54,11 @@ section {
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
+}
+
+main {
+    align-items: column;
+    display: flex;
 }
 
 header {
@@ -89,3 +97,110 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+
+.knight-stats {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.knight {
+        color: white;
+        font-size: 2rem;
+        font-weight: 800;
+        font-family:Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding: 30px;
+}
+
+.knight img {
+    width: 150px;
+    
+    
+}
+
+.knight p {
+    color: gold;
+    background-color: silver;
+    border-radius: 10px;
+    padding: 10px
+}
+
+form {
+    padding: 20px;
+    display: flex
+}
+
+.goblin-stats {
+    width: 125%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+}
+
+.goblin-stats input, .goblin-stats button {
+    height: 50px;
+}
+
+.goblin-stats button {
+    font-size: 1em;
+}
+.goblin-stats input {
+    font-size: 1rem;
+    width: 30%
+}
+
+.goblins-slain { 
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+} 
+
+.goblins-slain p {
+    font-size: 2rem;
+    color: red;
+    background-color: black;
+    padding: 3px;
+    border-radius: 20px;
+    font-weight: 400;
+
+}
+
+form {
+    padding: 40px;
+    display: flex;
+}
+
+
+.goblin {
+    cursor: pointer;
+    border: solid 3px purple;
+    border-radius: 4px;
+    display: flex;
+    justify-content: right;
+    align-items: ;
+    margin: 20px;
+    background-color: black;
+    justify-self: right;
+    font-size: 2rem;
+    color: greenyellow;
+    
+}
+
+.dead {
+    opacity: .2;
+    cursor: default;
+}
+
+.game-over {
+    transform: rotate(270deg);
+}
+
